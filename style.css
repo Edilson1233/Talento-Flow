@@ -10,17 +10,25 @@ body{
 
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px; /* Largura máxima do site */
+    margin: 0 auto; /* O 'auto' nas laterais centraliza a div*/
+    padding: 20px 0;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: whitesmoke;
 }
 
 nav{
     display: flex;
     gap: 20px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 nav a{ 
@@ -31,7 +39,7 @@ nav a{
 .auth-buttons{
     display: flex;
     gap: 10px;
-    margin-right: 50px;
+    margin-right: 150px;
 }
 
 .auth-buttons a{
@@ -46,9 +54,16 @@ nav a{
     
 }
 
+
+
 .hero{
     padding: 60px 20px;
-    margin-left: 50px;
+    padding-left: 75px;
+    background-color: whitesmoke;
+}
+
+.hero-container{
+    margin-left: 150px;
 }
 
 .hero h1{
@@ -72,6 +87,7 @@ nav a{
     gap: 10px;
     border: #E2E8F0 solid 1px;
     padding: 20px;
+    max-width: 600px;
 }
 
 .search-box i{
@@ -96,4 +112,285 @@ button{
     padding: 10px 20px;
     font-size: 12px;
     cursor: pointer;
+}
+
+.companies{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.companies p{
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 20px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories{
+    margin-top: 80px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.grid-categories{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: #E2E8F0 1px solid;
+    padding: 20px;
+    gap: 10px;
+}
+
+.card i{
+    color: #590cad;
+}
+
+.cta-banner{
+    background-color: #590cad;
+    color: white;
+    padding: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.cta-text p{
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #E2E8F0;
+}
+
+.cta-text h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+    max-width: 350px;
+    line-height: 1.2;
+}
+
+.btn-white{
+    background-color: white;
+    color: #590cad;
+}
+
+.cta-image{
+    margin-top: 25px;
+    background: white;
+    height: 250px;
+    border-radius: 10px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+
+.featured-jobs{
+    margin-top: 80px;
+}
+
+.grid-jobs{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.job-card{
+    display: flex;
+    flex-direction: column;
+    border: #E2E8F0 1px solid;
+    padding: 20px;
+    gap: 10px;
+}
+
+.job-card p{
+color: #64748B;
+}
+
+.job-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge{
+    border: #590cad 1px solid;
+    padding: 5px;
+    color: #590cad;
+    font-size: 12px;
+}
+
+
+
+.tag-orange{
+    color: orangered;
+    background-color: rgb(248, 204, 123);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tag-purple{
+      color: #590cad;
+    background-color:#eae4f1;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+.tag-green{
+ color: rgb(96, 223, 96);
+    background-color:#d5f0e2;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+
+.latest-jobs{
+    background-color: whitesmoke;
+}
+
+.grid-latest-jobs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.latest-job-card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.job-tags{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.section-header{
+    padding-top: 20px;
+}
+
+.tag-outline-green{
+     color: rgb(96, 223, 96);
+    background-color:#d5f0e2;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 12px; 
+    font-weight: bold;
+
+}
+
+.tag-outline-orange{
+    border: orange 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 12px;
+    color: orange;
+}
+
+.tag-outline-blue{
+       border: #590cad 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 12px;
+    color: #590cad;
+}
+
+.site-footer{
+    background-color: #222225;
+}
+
+.footer-container{
+      width: 90%;
+    max-width: 1200px; /* Largura máxima do site */
+    margin: 0 auto; /* O 'auto' nas laterais centraliza a div*/
+    padding: 20px 0;
+    margin-top: 20px;
+
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-brand{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+ p{
+    color: #64748B;
+}
+
+h4{
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #64748B;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form input{
+    padding: 7px;
 }

@@ -10,44 +10,47 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        
-        <header>
-            <nav>
-                <div class="logo"><img src="assets/Logo.png" alt="TalentoFlow Logo"></div>
-                <a href="#">Find Jobs</a>
-                <a href="#">Browse Companies</a>
-            </nav>
-            <div class="auth-buttons">
-                <a href="#" class="login-btn">Entrar</a>
+    
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/Logo.png" alt="TalentoFlow Logo"></div>
+            <a href="#">Find Jobs</a>
+            <a href="#">Browse Companies</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="login-btn">Entrar</a>
                 <a href="#" class="btn-acct">Criar Conta</a>
             </div>
         </header>
 
         <section class="hero">
-            <h1>Descubra<br> mais de <br><span class="highlight">5000+ Vagas</span></h1>
-            <p>A TalentoFlow é a ponte entre o seu talento e o <br> mercado de trabalho moçambicano. Encontre <br> oportunidades que impulsionam a sua carreira.</p>
-            
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Cargo ou palavra-chave">
-                <i class="fa-solid fa-location-dot"></i>
-                <select>
-                    <option>Seleccionar Província (Maputo)</option>
-                </select>
-                <button>Pesquisar Vagas</button>
-            </div>
-            <p class="popular-tags">Popular : UI Designer, UX Researcher, Android, Admin</p>
-        </section>
+            <div class="hero-container">
+                <h1>Descubra<br> mais de <br><span class="highlight">5000+ Vagas</span></h1>
+                <p>A TalentoFlow é a ponte entre o seu talento e o <br> mercado de trabalho moçambicano. Encontre <br> oportunidades que impulsionam a sua carreira.</p>
+                
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cargo ou palavra-chave">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select>
+                        <option>Seleccionar Província (Maputo)</option>
+                    </select>
+                    <button>Pesquisar Vagas</button>
+                </div>
+                <p class="popular-tags">Popular : UI Designer, UX Researcher, Android, Admin</p>
 
+            </div>
+        </section>
+        
+        <div class="container">
         <section class="companies">
             <p>Empresas que ajudamos a crescer</p>
             <div class="logos">
-                <span>vodafone</span>
-                <span>intel</span>
-                <span>TESLA</span>
-                <span>AMD</span>
-                <span>Talkit</span>
+                <span><img src="assets/vodafone-2017-logo.png" alt="Vodafone Logo"></span>
+                <span><img src="assets/intel-3.png" alt="Intel Logo"></span>
+                <span><img src="assets/tesla-9 1.png" alt="Tesla Logo"></span>
+                <span><img src="assets/amd-logo-1.png" alt="AMD Logo"></span>
+                <span><img src="assets/talkit 1.png" alt="Talkit Logo"></span>
             </div>
         </section>
 
@@ -59,42 +62,42 @@
             
             <div class="grid-categories">
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-paintbrush"></i></span>
                     <h3>Design</h3>
                     <p>235 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-brands fa-sellsy"></i></span>
                     <h3>Sales</h3>
                     <p>756 jobs available →</p>
                 </div>
                 <div class="card active">
-                    <span></span>
+                    <span><i class="fa-solid fa-bullhorn"></i></span>
                     <h3>Marketing</h3>
                     <p>140 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
                     <h3>Vendas e Comercial</h3>
                     <p>325 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-laptop-code"></i></span>
                     <h3>Tecnologia e Informática</h3>
                     <p>436 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-code"></i></span>
                     <h3>Engenharia</h3>
                     <p>542 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-briefcase"></i></span>
                     <h3>Gestão de Negócios</h3>
                     <p>211 jobs available →</p>
                 </div>
                 <div class="card">
-                    <span></span>
+                    <span><i class="fa-solid fa-briefcase"></i></span>
                     <h3>Recursos Humanos</h3>
                     <p>346 jobs available →</p>
                 </div>
@@ -103,12 +106,12 @@
 
         <section class="cta-banner">
             <div class="cta-text">
-                <h2>Comece a recrutar hoje mesmo</h2>
+                <h2>Comece a <br>recrutar hoje <br>mesmo</h2>
                 <p>Publicar Vaga agora por apenas 100MT</p>
                 <button class="btn-white">Publicar Vaga agora</button>
             </div>
             <div class="cta-image">
-                [ Imagem de Dashboard Fictíci]
+            <img src="assets/Dashboard Company.png" alt="">
             </div>
         </section>
 
@@ -129,7 +132,7 @@
                     <p class="desc">Revolut is looking for Email Marketing to help team ma...</p>
                     <div class="tags">
                         <span class="tag-orange">Marketing</span>
-                        <span class="tag-blue">Design</span>
+                        <span class="tag-green">Design</span>
                     </div>
                 </div>
 
@@ -143,7 +146,67 @@
                     <p class="desc">Dropbox is looking for Brand Designer to help the team t...</p>
                     <div class="tags">
                         <span class="tag-green">Design</span>
-                        <span class="tag-blue">Business</span>
+                        <span class="tag-purple">Business</span>
+                    </div>
+                </div>
+
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-logo">D</div>
+                        <span class="badge">Full Time</span>
+                    </div>
+                    <h4>Brand Designer</h4>
+                    <p class="location">Dropbox - San Francisco, US</p>
+                    <p class="desc">Dropbox is looking for Brand Designer to help the team t...</p>
+                    <div class="tags">
+                        <span class="tag-green">Design</span>
+                        <span class="tag-purple">Business</span>
+                    </div>
+                </div>
+
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-logo">D</div>
+                        <span class="badge">Full Time</span>
+                    </div>
+                    <h4>Brand Designer</h4>
+                    <p class="location">Dropbox - San Francisco, US</p>
+                    <p class="desc">Dropbox is looking for Brand Designer to help the team t...</p>
+                    <div class="tags">
+                        <span class="tag-green">Design</span>
+                        <span class="tag-purple">Business</span>
+                    </div>
+                </div>
+
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-logo">D</div>
+                        <span class="badge">Full Time</span>
+                    </div>
+                    <h4>Brand Designer</h4>
+                    <p class="location">Dropbox - San Francisco, US</p>
+                    <p class="desc">Dropbox is looking for Brand Designer to help the team t...</p>
+                    <div class="tags">
+                        <span class="tag-green">Design</span>
+                        <span class="tag-purple">Business</span>
+                    </div>
+                </div>
+
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-logo">D</div>
+                        <span class="badge">Full Time</span>
+                    </div>
+                    <h4>Brand Designer</h4>
+                    <p class="location">Dropbox - San Francisco, US</p>
+                    <p class="desc">Dropbox is looking for Brand Designer to help the team t...</p>
+                    <div class="tags">
+                        <span class="tag-green">Design</span>
+                        <span class="tag-purple">Business</span>
                     </div>
                 </div>
 
@@ -275,7 +338,7 @@
                 </div>
 
                 <div class="latest-job-card">
-                    <div class="job-logo-box" style="color: #3F51B5; background: #e8eaf6;">W</div>
+                    <div class="job-logo-box">W</div>
                     <div class="job-info">
                         <h4>HR Manager</h4>
                         <p class="company-location">Webflow • Lucern, Switzerland</p>
@@ -297,8 +360,8 @@
             <div class="footer-top">
                 
                 <div class="footer-brand">
-                    <div class="footer-logo">🔵 TalentoFlow</div>
-                    <p>A TalentoFlow é a ponte entre o seu talento e o mercado de trabalho moçambicano. Encontre oportunidades que impulsionam a sua carreira.</p>
+                    <div class="footer-logo"> <img src="assets/Logo-Branco.png" alt=""></div>
+                    <p>A TalentoFlow é a ponte entre o seu talento e o <br> mercado de trabalho moçambicano. Encontre <br> oportunidades que impulsionam a sua carreira.</p>
                 </div>
 
                 <div class="footer-links">
@@ -324,7 +387,7 @@
 
                 <div class="footer-newsletter">
                     <h4>Get job notifications</h4>
-                    <p>The latest job news, articles, sent to your inbox weekly.</p>
+                    <p>The latest job news, articles, sent to <br> your inbox weekly.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Email Address">
                         <button type="submit">Subscribe</button>
