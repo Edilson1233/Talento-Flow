@@ -7,6 +7,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8FAFC;
+    
 
 }
 
@@ -64,6 +65,20 @@ nav a{
     margin-left: 120px;
 }
 
+
+.text-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-area img {
+  display: block;
+  margin-left: auto; /* Empurra a imagem para a direita */
+  margin-right: 0;
+}
+
 .hero h1{
     font-size: 48px;
     color: #1A1A1A;
@@ -88,6 +103,47 @@ nav a{
     max-width: 600px;
 }
 
+.search-box-job{
+    display: flex;
+    border: #E2E8F0 solid 1px;
+    background-color: #ffffff;
+    /* Padding: topo/baixo (8px), direita (8px para abraçar o botão), esquerda (24px) */
+    padding: 20px 20px 8px 24px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 1250px;
+    margin: 40px auto 10px auto;
+    gap: 10px;
+    
+    
+}
+
+.popular-tags{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.search-box-job input{
+    flex: 1; /* Faz o input crescer e ocupar o espaço disponível */
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.search-box-job select {
+    flex: 1; /* Ocupa a mesma proporção de espaço que o input */
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    cursor: pointer;
+}
+
 .search-box i{
     color: #64748B;
     font-size: 16px;
@@ -95,6 +151,15 @@ nav a{
 }
 
 .search-box input, .search-box select{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #E2E8F0 solid 2px;
+    font-size: 12px;
+}
+
+.search-box-job input, .search-box-job select{
     padding: 10px;
     border-top: none;
     border-left: none;
