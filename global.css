@@ -1,0 +1,321 @@
+
+/* ── 1. CSS RESET ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── 2. VARIÁVEIS CSS ─────────────────────────────────────── */
+:root {
+    /* Cores principais */
+    --color-primary:      #590cad;
+    --color-primary-light:#eae4f1;
+    --color-accent:       #0988d1;
+    --color-bg:           #F8FAFC;
+    --color-bg-alt:       whitesmoke;
+    --color-dark:         #222225;
+    --color-text:         #1A1A1A;
+    --color-muted:        #64748B;
+    --color-border:       #E2E8F0;
+    --color-white:        #ffffff;
+
+    /* Tags coloridas */
+    --color-tag-orange-text: orangered;
+    --color-tag-orange-bg:   rgb(248, 204, 123);
+    --color-tag-green-text:  rgb(96, 223, 96);
+    --color-tag-green-bg:    #d5f0e2;
+
+    /* Tipografia */
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm:   14px;
+    --font-size-xs:   12px;
+
+    /* Espaçamentos */
+    --spacing-xs:  8px;
+    --spacing-sm:  16px;
+    --spacing-md:  24px;
+    --spacing-lg:  40px;
+    --spacing-xl:  60px;
+
+    /* Bordas */
+    --radius-sm:  4px;
+    --radius-md:  10px;
+    --radius-lg:  12px;
+    --radius-pill: 25px;
+
+    /* Largura máxima do conteúdo */
+    --max-width: 1200px;
+}
+
+/* ── 3. ESTILOS GLOBAIS ───────────────────────────────────── */
+/* Fonte e cor de fundo padrão do site */
+body {
+    font-family: var(--font-base);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+}
+
+/* Links sem sublinhado por padrão */
+a {
+    text-decoration: none;
+    color: var(--color-muted);
+}
+
+/* Remove marcadores de lista */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: var(--color-muted);
+}
+
+h4 {
+    color: var(--color-white);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-xs);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: opacity 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+/* Destaque de cor em textos */
+.highlight {
+    color: var(--color-accent);
+}
+
+/* ── 4. HEADER ────────────────────────────────────────────── */
+/* Barra de navegação superior */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px var(--spacing-lg);
+    background-color: var(--color-bg-alt);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--color-muted);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Botões de autenticação (Entrar / Criar Conta) */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth-buttons a {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    transition: opacity 0.2s ease;
+}
+
+.btn-acct {
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
+}
+
+.btn-acct:hover {
+    opacity: 0.88;
+}
+
+/* ── 5. FOOTER ────────────────────────────────────────────── */
+/* Rodapé escuro com links e newsletter */
+.site-footer {
+    background-color: var(--color-dark);
+    margin-top: var(--spacing-xl);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+/* Linha superior do footer: brand + links + newsletter */
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 280px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-links a:hover {
+    color: var(--color-white);
+}
+
+/* Bloco de newsletter */
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 9px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    flex: 1;
+    min-width: 160px;
+}
+
+/* Linha divisória do footer */
+.footer-divider {
+    border: none;
+    border-top: 1px solid #3a3a3e;
+    margin: var(--spacing-md) 0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: var(--color-muted);
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-white);
+}
+
+/* ── 6. RESPONSIVIDADE — HEADER & FOOTER ──────────────────── */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-sm);
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .auth-buttons {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: var(--spacing-sm) var(--spacing-xs);
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+}

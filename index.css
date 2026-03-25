@@ -1,0 +1,460 @@
+/* ── 1. HERO — SEÇÃO PRINCIPAL ────────────────────────────── */
+.hero {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-bg-alt);
+}
+
+.hero-container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.hero > .hero-container > p {
+    font-size: var(--font-size-base);
+    color: var(--color-muted);
+    margin-top: 20px;
+}
+
+/* Caixa de busca da hero */
+.search-box {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: var(--color-border) solid 1px;
+    padding: 20px;
+    max-width: 600px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+}
+
+.search-box i {
+    color: var(--color-muted);
+    font-size: var(--font-size-base);
+}
+
+.search-box input,
+.search-box select {
+    padding: 10px;
+    border: none;
+    border-bottom: var(--color-border) solid 2px;
+    font-size: var(--font-size-xs);
+    outline: none;
+    background: transparent;
+}
+
+/* Tags populares abaixo da busca */
+.popular-tags {
+    margin-top: 12px;
+    font-size: var(--font-size-sm);
+}
+
+/* ── 2. EMPRESAS PARCEIRAS ────────────────────────────────── */
+/* Faixa com logos de empresas */
+.companies {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.companies p {
+    font-size: var(--font-size-base);
+    color: var(--color-muted);
+    margin-bottom: 20px;
+}
+
+/* Logos distribuídos horizontalmente */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.logos img {
+    max-height: 40px;
+    object-fit: contain;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.logos img:hover {
+    opacity: 1;
+    filter: none;
+}
+
+/* ── 3. CATEGORIAS ────────────────────────────────────────── */
+/* Grid de cards de categorias */
+.categories {
+    margin-top: 80px;
+}
+
+/* Grid de 4 colunas  */
+.grid-categories {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card individual de categoria */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: var(--color-border) 1px solid;
+    padding: 20px;
+    gap: 10px;
+    border-radius: var(--radius-sm);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    background-color: var(--color-white);
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(89, 12, 173, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Ícone do card em roxo */
+.card i {
+    color: var(--color-primary);
+    font-size: 20px;
+}
+
+/* Estado activo do card (ex: Marketing) */
+.card.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.card.active i,
+.card.active h3,
+.card.active p {
+    color: var(--color-white);
+}
+
+/* ── 4. BANNER CTA ────────────────────────────────────────── */
+/* Faixa de chamada para ação */
+.cta-banner {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 50px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* Recorte diagonal decorativo no canto inferior direito */
+    clip-path: polygon(0% 0%, 100% 0, 100% 71%, 68% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.cta-text p {
+    font-size: var(--font-size-sm);
+    margin-bottom: 30px;
+    color: var(--color-border);
+}
+
+.cta-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    max-width: 350px;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+/* Botão branco com texto roxo (inversão do padrão) */
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* Imagem do dashboard no banner */
+.cta-image {
+    margin-top: 25px;
+    background: var(--color-white);
+    height: 250px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.cta-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── 5. VAGAS EM DESTAQUE ─────────────────────────────────── */
+/* Grid de cards de vagass*/
+.featured-jobs {
+    margin-top: 80px;
+}
+
+/* Grid de 4 colunas para desktop */
+.grid-jobs {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card individual de vaga */
+.job-card {
+    display: flex;
+    flex-direction: column;
+    border: var(--color-border) 1px solid;
+    padding: 20px;
+    gap: 10px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-white);
+    transition: box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.job-card p {
+    color: var(--color-muted);
+}
+
+/* Cabeçalho do card: logo + badge */
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Placeholder circular para logo da empresa */
+.job-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Badge de tipo de contrato */
+.badge {
+    border: var(--color-primary) 1px solid;
+    padding: 4px 8px;
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+    border-radius: var(--radius-sm);
+}
+
+/* Grupo de tags de categoria */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+/* ── 6. TAGS DE CATEGORIA ─────────────────────────────────── */
+
+.tag-orange {
+    color: var(--color-tag-orange-text);
+    background-color: var(--color-tag-orange-bg);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+}
+
+.tag-purple {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+}
+
+.tag-green {
+    color: var(--color-tag-green-text);
+    background-color: var(--color-tag-green-bg);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+}
+
+/* ── 7. ÚLTIMAS VAGAS ABERTAS ─────────────────────────────── */
+/* Secção com grid de 2 colunas de vagas recentes */
+.latest-jobs {
+    background-color: var(--color-bg-alt);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-md);
+}
+
+/* Grid de 2 colunas */
+.grid-latest-jobs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Card de vaga recente */
+.latest-job-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    transition: box-shadow 0.2s ease;
+}
+
+.latest-job-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Caixa com letra inicial da empresa ou logo*/
+.job-logo-box {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* Tags de tipo/categoria da vaga recente */
+.job-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+/* Tags com borda (outline) */
+.tag-outline-green {
+    color: var(--color-tag-green-text);
+    background-color: var(--color-tag-green-bg);
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+}
+
+.tag-outline-orange {
+    border: orange 1px solid;
+    border-radius: var(--radius-pill);
+    padding: 6px 12px;
+    font-size: var(--font-size-xs);
+    color: orange;
+}
+
+.tag-outline-blue {
+    border: var(--color-primary) 1px solid;
+    border-radius: var(--radius-pill);
+    padding: 6px 12px;
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+}
+
+/* ── 8. RESPONSIVIDADE — INDEX ────────────────────────────── */
+
+
+@media (max-width: 1024px) {
+    .grid-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-jobs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-banner {
+        /* Remove o clip-path em telas menores para não cortar conteúdo */
+        clip-path: none;
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+
+    .cta-image {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Table(até 768px) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .search-box input,
+    .search-box select {
+        width: 100%;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .grid-latest-jobs {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-text h2 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile (até 480px): tudo em coluna única */
+@media (max-width: 480px) {
+    .hero {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .grid-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-jobs {
+        grid-template-columns: 1fr;
+    }
+
+    .latest-job-card {
+        flex-direction: column;
+    }
+
+    .cta-banner {
+        padding: var(--spacing-md);
+    }
+}
