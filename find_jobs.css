@@ -4,6 +4,20 @@
     background-color: var(--color-bg-alt);
 }
 
+/* Estilo padrão dos links */
+nav a {
+    text-decoration: none;
+    color: var(--color-muted); /* A cor cinza que você já usa */
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+/* Estilo para a aba ativa */
+nav a.active {
+    color: var(--color-primary); /* O roxo que definimos nas variáveis */
+    border-bottom: 2px solid var(--color-primary); /* Uma linha embaixo para destacar */
+    padding-bottom: 5px;
+}
 .hero-container-job {
     width: 90%;
     max-width: 1250px;
